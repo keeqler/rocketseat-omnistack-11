@@ -4,7 +4,7 @@ exports.up = knex => {
 
     table.string('title').notNullable();
     table.string('description').notNullable();
-    table.string('value').notNullable();
+    table.integer('value').notNullable();
 
     table.integer('ongId').notNullable();
 
