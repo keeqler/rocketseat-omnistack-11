@@ -1,7 +1,7 @@
 import db from '../database';
 
 class IncidentController {
-  async create(request, response) {
+  async store(request, response) {
     const { title, description, value } = request.body;
     const { authorization: ongId } = request.headers;
 
@@ -40,9 +40,7 @@ class IncidentController {
     const { id } = request.params;
     const ongId = request.headers.authorization;
 
-    const incident = await db('incidents')
-      .where({ id, ongId })
-      .delete();
+    const incident = await db('incidents').where({ id, ongId }).delete();
 
     if (incident) return response.sendStatus(204);
 
