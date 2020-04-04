@@ -1,11 +1,13 @@
 {
-  "plugins": ["prettier"],
+  "plugins": ["prettier", "jest"],
   "extends": ["airbnb-base", "prettier"],
   "env": {
     "node": true,
-    "es6": true
+    "es6": true,
+    "jest/globals": true
   },
   "rules": {
+    "jest/valid-expect": "error",
     "radix": "off",
     "class-methods-use-this": "off",
     "no-param-reassign": "off",
