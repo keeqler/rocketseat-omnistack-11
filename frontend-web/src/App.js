@@ -1,16 +1,24 @@
+import styled from 'styled-components';
+
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import { ToastContainer } from 'react-toastify';
+import { ToastContainer as _ToastContainer } from 'react-toastify';
 
 import Routes from './Routes';
 
 import GlobalStyles from '~/components/GlobalStyles';
 
+const ToastContainer = styled(_ToastContainer)`
+  .toast {
+    background: var(--primary);
+  }
+`;
+
 function App() {
   return (
     <BrowserRouter>
       <GlobalStyles />
-      <ToastContainer autoClose={3000} />
+      <ToastContainer toastClassName="toast" autoClose={3000} />
       <Routes />
     </BrowserRouter>
   );

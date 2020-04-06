@@ -36,7 +36,7 @@ export default function Login({ history }) {
       localStorage.setItem('ongId', data.id);
       history.push('/dashboard');
     } catch (error) {
-      toast.error('Não foi possível achar uma ONG com essa ID');
+      toast.error('Não foi possível achar uma ONG com esse ID');
     }
   }
 
