@@ -1,8 +1,18 @@
-<p align="center"><img  src="https://github.com/keeqler/rocketseat-omnistack-11/blob/master/frontend-mobile/src/assets/logo@3x.png?raw=true"></p>
+<p align="center"><img src="https://github.com/keeqler/rocketseat-omnistack-11/blob/master/frontend-mobile/src/assets/logo@3x.png?raw=true"></p>
 <h1 align="center">Rocketseat OmniStack bootcamp project</h1>
-<p align="center">A project made during the <strong>Rocketseat OmniStack bootcamp</strong>. The project's name is "Be The Hero", that consists of a website that you can register an NGO (non-governmental organization) and then register cases that need help, in order to find for a "hero". It also consists of a mobile app that people who are willing to help can use to see a list of all cases with all the details.</p>
+<p align="center">A project made during the <strong>Rocketseat OmniStack bootcamp</strong>. The project's name is "Be The Hero", that consists of a website that you can register an NGO (non-governmental organization) and then register cases that need help, in order to find a "hero". It also consists of a mobile app that people who are willing to help can use to see a list of all cases with all the details.</p>
 
-## What I used
+# Screenshots
+
+<p align="center">
+  <img src="https://i.imgur.com/cTd1ZYZ.png">
+  <img src="https://i.imgur.com/zQbiFCC.png">
+  <img src="https://i.imgur.com/UB69SkK.png">
+  <img src="https://i.imgur.com/79ET5di.png">
+  <img src="https://i.imgur.com/ix4PCd1.png">
+</p>
+
+# What I used
 
 ### Language:
 
@@ -29,12 +39,13 @@ Javascript (NodeJS)
 
 - Docker Compose
 
-## Running
+# Running
 
 ### Requirements:
 
 - Docker Compose
 - Yarn
+- Expo CLI
 
 ### Getting started
 
@@ -56,18 +67,24 @@ The API and the web app will be available at `localhost:3333` and `localhost:300
 
 ### Running the mobile app
 
-Firstly, open an Android or iOS emulator, if you don't want to use an emulator, you can download Expo Client in your phone at Google Play or Apple App Store and scan the QR code that will appear in the terminal after you start the app. After that, you can navigate to the mobile app directory (`frontend-mobile`) and run:
+Firstly, open an Android or iOS emulator, if you don't want to use an emulator, you can download Expo Client in your phone at Google Play or Apple App Store and scan the QR code that will appear in the terminal after you start the app.
 
-**For Android:**
+If you don't have Expo CLI installed globally, you can install it by running:
+
+```shell
+$ yarn global add expo-cli
+```
+
+Finally, you can navigate to the mobile app directory (`frontend-mobile`) and run:
+
+**Android:**
 
 ```shell
 $ yarn android
 ```
 
-**For iOS:**
+**iOS:**
 
 ```shell
 $ yarn ios
 ```
-
-If you don't have `expo-cli` package installed globally, you may be prompted to install it.
